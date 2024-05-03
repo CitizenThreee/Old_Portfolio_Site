@@ -4,30 +4,30 @@
 <head>
     <title>Profile</title>
 
-    <link rel="stylesheet" href="../styles/style_global.css"/>
-    <link rel="stylesheet" href="../styles/style_navbar.css"/>
-    <link rel="stylesheet" href="../styles/style_columnsize.css"/>
-    <link rel="stylesheet" href="../styles/style_textformatting.css"/>
+    <link rel="stylesheet" href="./styles/style_global.css"/>
+    <link rel="stylesheet" href="./styles/style_navbar.css"/>
+    <link rel="stylesheet" href="./styles/style_columnsize.css"/>
+    <link rel="stylesheet" href="./styles/style_textformatting.css"/>
 </head>
 
 <body>
     <nav>
         <ul>
             <li class="float-left"><a class="active" href="./index.html" >Home</a></li>
-            <li class="float-left"><a href="./portfolio.html">Portfolio</a></li>
-            <li class="float-left"><a href="./contact.html">Contact</a></li>
+            <li class="float-left"><a href="./pages/portfolio.html">Portfolio</a></li>
+            <li class="float-left"><a href="./pages/contact.html">Contact</a></li>
 
             <li class="title">Aedan Beisly</li>
 
-            <li class="float-right"><a class="image" href="https://github.com/CitizenThreee"><img src="../img/github-mark-white.png" class="nav_img"></a></li>
-            <li class="float-right"><a class="image" href="https://www.linkedin.com/in/aedan-beisly-322a64234/"><img src="../img/LinkedIn-Logo.png" class="nav_img"></a></li>
-            <li class="float-right"><a class="image" href="mailto:albeisly@gmail.com"><img src="../img/email-logo.png" class="nav_img"></a></li>
+            <li class="float-right"><a class="image" href="https://github.com/CitizenThreee"><img src="./img/github-mark-white.png" class="nav_img"></a></li>
+            <li class="float-right"><a class="image" href="https://www.linkedin.com/in/aedan-beisly-322a64234/"><img src="./img/LinkedIn-Logo.png" class="nav_img"></a></li>
+            <li class="float-right"><a class="image" href="mailto:albeisly@gmail.com"><img src="./img/email-logo.png" class="nav_img"></a></li>
         </ul>
     </nav>
 
     <section class="row">
         <div class="col-3">
-            <img id="photoOfAedan" src="../img/hobbiton.JPG" alt="Photo of Aedan Beisly" style="max-width: 100%;">
+            <img id="photoOfAedan" src="./img/hobbiton.JPG" alt="Photo of Aedan Beisly" style="max-width: 100%;">
             <button class="float-left" onclick="PreviousImage()">Previous</button>
             <button onclick="PauseScroll()">Pause Scroll</button>
             <button class="float-right" onclick="NextImage()">Next</button>
@@ -41,9 +41,9 @@
 
     <script>
         const imageLinks = [
-            "../img/hobbiton.JPG", 
-            "../img/tiger.JPG", 
-            "../img/karangahake.JPG"
+            "./img/hobbiton.JPG", 
+            "./img/tiger.JPG", 
+            "./img/karangahake.JPG"
         ];
 
         imageInterval = setInterval( NextImage , 9000 );
