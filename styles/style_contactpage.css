@@ -1,0 +1,28 @@
+#contactBox {
+    margin: 5px auto 10px auto;
+    max-width: 1000px;
+    padding: 5% 5% 10% 5%;
+}
+
+#contactTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contactTxt {
+    color: white;
+    font-size: 25px;
+}
+
+tr {
+    border-bottom: 2px solid #333;
+    border-bottom-width: 20%;
+}
+
+td {
+    padding: 20px 0px;
+}
+
+.contactLink {
+    float: right;
+}
