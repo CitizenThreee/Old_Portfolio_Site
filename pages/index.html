@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lnag="en">
+<head>
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="../styles/style_global.css"/>
+    <link rel="stylesheet" href="../styles/style_navbar.css"/>
+    <link rel="stylesheet" href="../styles/style_columnsize.css"/>
+    <link rel="stylesheet" href="../styles/style_textformatting.css"/>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="float-left"><a class="active" href="./index.html" >Home</a></li>
+            <li class="float-left"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="float-left"><a href="./contact.html">Contact</a></li>
+
+            <li class="title">Aedan Beisly</li>
+
+            <li class="float-right"><a class="image" href="https://github.com/CitizenThreee"><img src="../img/github-mark-white.png" class="nav_img"></a></li>
+            <li class="float-right"><a class="image" href="https://www.linkedin.com/in/aedan-beisly-322a64234/"><img src="../img/LinkedIn-Logo.png" class="nav_img"></a></li>
+            <li class="float-right"><a class="image" href="mailto:albeisly@gmail.com"><img src="../img/email-logo.png" class="nav_img"></a></li>
+        </ul>
+    </nav>
+
+    <section class="row">
+        <div class="col-3">
+            <img id="photoOfAedan" src="../img/hobbiton.JPG" alt="Photo of Aedan Beisly" style="max-width: 100%;">
+            <button class="float-left" onclick="PreviousImage()">Previous</button>
+            <button onclick="PauseScroll()">Pause Scroll</button>
+            <button class="float-right" onclick="NextImage()">Next</button>
+        </div>
+
+        <article class="col-5">
+            <h2>About Me</h2>
+            <p class="">Hello there! My name is Aedan. I am currently studying at IOD. I have been coding in some fashion or another for the last 7-8 years, but I now want to make it my full time job.</p>
+        </article>
+    </section>
+
+    <script>
+        const imageLinks = [
+            "../img/hobbiton.JPG", 
+            "../img/tiger.JPG", 
+            "../img/karangahake.JPG"
+        ];
+
+        imageInterval = setInterval( NextImage , 9000 );
+
+        function NextImage() {
+            let currentImage = document.getElementById("photoOfAedan").getAttribute("src");
+            let nextIndex = (imageLinks.indexOf(currentImage) + 1) % imageLinks.length;
+
+            document.getElementById("photoOfAedan").src=imageLinks[nextIndex];
+        }
+        function PreviousImage() {
+            let currentImage = document.getElementById("photoOfAedan").getAttribute("src");
+            let previousIndex = (imageLinks.indexOf(currentImage) - 1 + imageLinks.length) % imageLinks.length;
+
+            document.getElementById("photoOfAedan").src=imageLinks[previousIndex];
+        }
+        function PauseScroll() {
+            clearInterval(imageInterval);
+        }
+    </script>
+</body>
+
+
+</html>
+

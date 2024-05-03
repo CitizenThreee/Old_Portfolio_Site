@@ -1,0 +1,20 @@
+.col-1 {max-width: 12.5%;}
+.col-2 {max-width: 25%;}
+.col-3 {max-width: 37.5%;}
+.col-4 {max-width: 50%;}
+.col-5 {max-width: 62.5%;}
+.col-6 {max-width: 75%;}
+.col-7 {max-width: 87.5%;}
+.col-8 {max-width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
