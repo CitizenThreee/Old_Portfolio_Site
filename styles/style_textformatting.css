@@ -1,6 +1,6 @@
 p {
     color: white;
-    text-indent: 30px;
+    text-align: justify;
 }
 
 h2 {
@@ -11,3 +11,4 @@ h2 {
     text-align: right;
     padding-right: 30px;
 }
+

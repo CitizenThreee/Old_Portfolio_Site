@@ -14,15 +14,18 @@
     font-size: 25px;
 }
 
-tr {
-    border-bottom: 2px solid #333;
-    border-bottom-width: 20%;
+tr:nth-child(even){
+    background-color: rgb(95, 95, 95);
+}
+tr:nth-child(odd){
+    background-color: #555;
 }
 
 td {
-    padding: 20px 0px;
+    padding: 10px 0px 10px 30px;
 }
 
 .contactLink {
     float: right;
 }
+

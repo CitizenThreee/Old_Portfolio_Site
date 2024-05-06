@@ -30,13 +30,15 @@
         <div class="col-3">
             <img id="photoOfAedan" src="./img/hobbiton.JPG" alt="Photo of Aedan Beisly" style="max-width: 100%;">
             <button class="float-left" onclick="PreviousImage()">Previous</button>
-            <button onclick="PauseScroll()">Pause Scroll</button>
             <button class="float-right" onclick="NextImage()">Next</button>
         </div>
 
         <article class="col-5">
             <h2>About Me</h2>
-            <p class="">Hello there! My name is Aedan. I am currently studying at IOD. I have been coding in some fashion or another for the last 7-8 years, but I now want to make it my full time job.</p>
+            <p>Hello there! My name is Aedan.</p>
+            <p>I grew up in Bolivia, South America, where I learnt Spanish as a second language when I was young, which is said to help when you go to learn other languages, maybe programming langages are the same? Living in Bolivia growing up, I also gained great perspective on the wider world of the world.</p>
+            <p>I love learning new things, resulting in countless hobbies, and a wide breadth of understanding in various fields. I have been coding in some fashion for around 8 years, on many different projects. I started out with game engines, and making small games for my friends and all to play, and eventually found my way to working on a startup for a businessman, and then creating an app that I always wanted to exist. I have also gotten very good at learning over the years, making it easier for me to pick up new things. I am passionate about building software to solve real world problems, and want to make a difference in the world with what time I have been given.</p>
+            <p>I am currently studying at IOD to fill in any gaps my journey may have left, and give me a solid foundation to take into the industry.</p>
         </article>
     </section>
 
@@ -44,7 +46,13 @@
         const imageLinks = [
             "./img/hobbiton.JPG", 
             "./img/tiger.JPG", 
-            "./img/karangahake.JPG"
+            "./img/karangahake.JPG",
+            "./img/beach.JPG",
+            "./img/engagement.JPG",
+            "./img/waterfall.JPG",
+            "./img/wedding.JPG",
+            "./img/puppies.JPG"
+
         ];
 
         imageInterval = setInterval( NextImage , 9000 );
@@ -60,9 +68,6 @@
             let previousIndex = (imageLinks.indexOf(currentImage) - 1 + imageLinks.length) % imageLinks.length;
 
             document.getElementById("photoOfAedan").src=imageLinks[previousIndex];
-        }
-        function PauseScroll() {
-            clearInterval(imageInterval);
         }
     </script>
 </body>
