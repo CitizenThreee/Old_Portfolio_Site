@@ -1,0 +1,12 @@
+.image-scroll-buttons {
+    height: 0;
+    position: relative;
+    bottom: 50%;
+}
+
+.image-scroll-buttons button {
+    padding: 2% 1%;
+    background-color: rgba(255, 255, 255, 0.349);
+    color: white;
+    margin: 1%;
+}

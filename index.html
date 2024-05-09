@@ -4,43 +4,65 @@
 <head>
     <title>Profile</title>
 
-    <link rel="stylesheet" href="./styles/style_global.css"/>
-    <link rel="stylesheet" href="./styles/style_navbar.css"/>
-    <link rel="stylesheet" href="./styles/style_columnsize.css"/>
-    <link rel="stylesheet" href="./styles/style_textformatting.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="./styles/style-global.css"/>
+    <link rel="stylesheet" href="./styles/style-flex.css"/>
+    <link rel="stylesheet" href="./styles/style-textformatting.css"/>
+    <link rel="stylesheet" href="./styles/style-layout.css"/>
+    <link rel="stylesheet" href="./styles/style-space.css"/>
+    <link rel="stylesheet" href="./styles/style-navbar.css"/>
+    <link rel="stylesheet" href="./styles/style-colour.css"/>
+    <link rel="stylesheet" href="./styles/style-elements.css"/>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="float-left"><a class="active" href="./index.html" >Home</a></li>
-            <li class="float-left"><a href="./pages/portfolio.html">Portfolio</a></li>
-            <li class="float-left"><a href="./pages/cv.html">CV</a></li>
-            <li class="float-left"><a href="./pages/contact.html">Contact</a></li>
+    <header>
+        <nav id="nav-bar">
+            <ul id="nav-list">
+                <li class="nav-item float-left"><a class="active" href="../index.html" >Home</a></li>
+                <li class="nav-item float-left"><a href="./pages/portfolio.html">Portfolio</a></li>
+                <li class="nav-item float-left"><a href="./pages/resume.html">Resume</a></li>
+                <li class="nav-item float-left"><a href="./pages/contact.html">Contact</a></li>
+    
+                <li class="nav-item title">Aedan Beisly</li>
+    
+                <li class="nav-item float-right"><a class="image" href="https://github.com/CitizenThreee" target="_blank"><img src="./img/github-mark-white.png" class="nav_img"></a></li>
+                <li class="nav-item float-right"><a class="image" href="https://www.linkedin.com/in/aedan-beisly-322a64234/" target="_blank"><img src="../img/LinkedIn-Logo.png" class="nav_img"></a></li>
+                <li class="nav-item float-right"><a class="image" href="mailto:albeisly@gmail.com" target="_blank"><img src="./img/email-logo.png" class="nav_img"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li class="title">Aedan Beisly</li>
-
-            <li class="float-right"><a class="image" href="https://github.com/CitizenThreee" target="_blank"><img src="./img/github-mark-white.png" class="nav_img"></a></li>
-            <li class="float-right"><a class="image" href="https://www.linkedin.com/in/aedan-beisly-322a64234/" target="_blank"><img src="./img/LinkedIn-Logo.png" class="nav_img"></a></li>
-            <li class="float-right"><a class="image" href="mailto:albeisly@gmail.com" target="_blank"><img src="./img/email-logo.png" class="nav_img"></a></li>
-        </ul>
-    </nav>
-
-    <section class="row">
-        <div class="col-3">
-            <img id="photoOfAedan" src="./img/hobbiton.JPG" alt="Photo of Aedan Beisly" style="max-width: 100%;">
-            <button class="float-left" onclick="PreviousImage()">Previous</button>
-            <button class="float-right" onclick="NextImage()">Next</button>
-        </div>
-
-        <article class="col-5">
-            <h2>About Me</h2>
-            <p>Hello there! My name is Aedan.</p>
-            <p>I grew up in Bolivia, South America, where I learnt Spanish as a second language when I was young, which is said to help when you go to learn other languages, maybe programming langages are the same? Living in Bolivia growing up, I also gained great perspective on the wider world of the world.</p>
-            <p>I love learning new things, resulting in countless hobbies, and a wide breadth of understanding in various fields. I have been coding in some fashion for around 8 years, on many different projects. I started out with game engines, and making small games for my friends and all to play, and eventually found my way to working on a startup for a businessman, and then creating an app that I always wanted to exist. I have also gotten very good at learning over the years, making it easier for me to pick up new things. I am passionate about building software to solve real world problems, and want to make a difference in the world with what time I have been given.</p>
-            <p>I am currently studying at IOD to fill in any gaps my journey may have left, and give me a solid foundation to take into the industry.</p>
-        </article>
-    </section>
+    <article class="flex-container margin-container-1 margin-top-5 background-primary pad-container-1">
+        <section class="basis-100">
+            <div class="pad-right-20 pad-top-20 float-left width-70 manage-size height-30vw">
+                <img id="photoOfAedan" class="max-100" src="./img/hobbiton.JPG" alt="Photo of Aedan Beisly">
+                <div class="width-100 image-scroll-buttons">
+                    <button class="float-left" onclick="PreviousImage()">&lt;</button>
+                    <button class="float-right" onclick="NextImage()">&gt;</button>
+                </div>
+            </div>
+    
+            <section class="" style="text-align: justify;">
+                <h2>About Me</h2>
+                <p>Hello there! My name is Aedan.</p>
+                <p>I grew up in Bolivia, South America, where I learnt Spanish as a second language when I was young, which is said to help 
+                    when you go to learn other languages, maybe programming langages are the same? Living in Bolivia growing up, I also 
+                    gained great perspective on the wider world.</p>
+                <p>I love learning new things, resulting in countless hobbies, and a wide breadth of understanding in various fields. I have 
+                    been coding in some fashion for around 8 years, on many different projects. I started out with game engines, and making small 
+                    games for my friends and I to play, and eventually found my way to working on a startup for a businessman, and then creating 
+                    an app that I always wanted to exist. I have also gotten very good at learning over the years, making it easier for me to pick 
+                    up new things. I am passionate about building software to solve real world problems, and want to make a difference in the 
+                    world with what time I have been given.</p>
+                <p>I am currently studying at IOD to fill in any gaps my journey may have left, and give me a solid foundation to take into the industry.</p>
+            </section>
+        </section>
+        
+    </article>
 
     <script>
         const imageLinks = [
@@ -48,9 +70,7 @@
             "./img/tiger.JPG", 
             "./img/karangahake.JPG",
             "./img/beach.JPG",
-            "./img/engagement.JPG",
             "./img/waterfall.JPG",
-            "./img/wedding.JPG",
             "./img/puppies.JPG"
 
         ];

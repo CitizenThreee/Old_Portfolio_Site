@@ -1,0 +1,32 @@
+:root {
+    --text-primary: black;
+    --text-heading: rgb(14, 5, 80);
+    --background-primary: rgb(248, 248, 248);
+    --background-secondary: rgb(211, 211, 211);
+    --background-tertiary: rgb(43, 43, 43);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-secondary);
+    font-family: sans-serif;
+}
+
+section { 
+    background-color: var(--background-primary);
+    margin: 1vh 0;
+}
+
+hr {
+    border: 1.5px solid var(--text-heading);
+}
+
+ul {
+    margin-left: 20px;
+}
+

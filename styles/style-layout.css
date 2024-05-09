@@ -1,0 +1,15 @@
+.float-left{float: left}
+.float-right{float: right}
+
+.clear-float-after + p, .clear-float-after + ul, .clear-float-after + a {
+    clear: both;
+}
+
+.max-100 { max-width: 100%; }
+.width-70 { width: 70%; }
+
+.height-30vw { height: 30vw; }
+
+@media screen and (max-width: 790px) {
+    .width-70.manage-size { width: 100%; margin: 0; padding: 0; clear: both; height: 45vw;}
+}

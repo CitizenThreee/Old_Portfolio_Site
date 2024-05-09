@@ -1,4 +1,4 @@
-.col-1 {max-width: 12.5%;}
+/*.col-1 {max-width: 12.5%;}
 .col-2 {max-width: 25%;}
 .col-3 {max-width: 37.5%;}
 .col-4 {max-width: 50%;}
@@ -17,4 +17,21 @@
     clear: both;
     display: table;
 }
+
+@media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .col-1 {max-width: 100%;}
+    .col-2 {max-width: 100%;}
+    .col-3 {max-width: 100%;}
+    .col-4 {max-width: 100%;}
+    .col-5 {max-width: 100%;}
+    .col-6 {max-width: 100%;}
+    .col-7 {max-width: 100%;}
+    .col-8 {max-width: 100%;}
+}*/
 
